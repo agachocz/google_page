@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Google</title>
+    <style>
+        button {
+            color: #757575;
+            border-radius: 2px;
+            border: 1px solid #f2f2f2;
+            cursor: pointer;
+            font: 400 13.3333px Arial;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 11px 4px;
+            min-width: 54px;
+            height: 36px;
+            line-height: 27px;
+            padding: 0 16px;
+            text-align: center;
+            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+        }
+        button:hover {
+            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
+            color: rgba(0,0,0,.87);
+            word-wrap: break-word;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            margin-top: -37px;
+            font: 16px arial,sans-serif;
+            line-height: 34px;
+            height: 34px !important;
+        }
+        .input_container {
+            padding: 5px 8px 0 16px;
+            border-radius: 2px;
+            border: none;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+            z-index: 3;
+            height: 44px;
+            width: 484px;
+            margin: 0 auto;
+        }
+        .access_icon {
+            cursor: pointer;
+            line-height: 44px;
+            height: 24px;
+            width: 24px;
+            background-size: 24px;
+            vertical-align: middle;
+        }
+        a {
+            text-decoration: none;
+            font: 13px arial,sans-serif;
+            cursor: pointer;
+            color: black;
+        }
+        a:hover {
+            opacity: .85;
+            text-decoration: underline;
+        }
+        #login {
+            color: #fff;
+            border: 1px solid #4285f4;
+            font-weight: bold;
+            outline: none;
+            background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+        }
+        #login:hover {
+            box-shadow: 0 1px 0 rgba(0,0,0,.15);
+        }
+        #apps_button {
+            background-image: url(icons.png);
+            background-size: 528px 68px;
+            background-position: -132px -38px;
+            opacity: .55;
+            cursor: pointer;
+            box-sizing: border-box;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            outline: none;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="apps">
+        <a href="https://mail.google.com/mail/?tab=wm">Gmail</a>
+        <a href="https://www.google.pl/imghp?hl=pl&tab=wi">Grafika</a>
+        <a href="https://www.google.pl/intl/pl/about/products?tab=wh" id="apps_button" title="Aplikacje Google"></a>
+        <button id="login">Zaloguj się</button>
+    </div>
+    <img src="googlelogo.png"/></br>
+    <div class="input_container">
+        <input />
+        <img src="keyboard.png" class="access_icon"/>
+        <img src="mic.png" class="access_icon"/>
+    </div>
+    </br>
+    <button>Szukaj w Google</button>
+    <button>Szczęśliwy traf</button>
+
+</body>
+</html>
