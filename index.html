@@ -123,6 +123,52 @@
             grid-row: 2 / 3;    
             text-align: center;
         }
+        .left_footer {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            justify-content: stretch;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .right_footer {
+            grid-column: 4 / 5;
+            grid-row: 3 / 4;
+            justify-content: stretch;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .left_footer > a {
+            color: #5f6368;
+            padding: 15px;
+            line-height: 40px;
+            vertical-align: bottom;
+        }
+        .right_footer > a {
+            color: #5f6368;
+            padding: 15px;
+            line-height: 40px;
+            vertical-align: bottom;
+        }
+        #country {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            position: relative;
+            bottom: 50px;
+            color: #5f6368;
+            padding: 15px;
+            line-height: 40px;
+            font-size: 15px;
+            font-family: arial,sans-serif;
+        }
 
     </style>
 </head>
@@ -147,6 +193,20 @@
             <button>Szukaj w Google</button>
             <button>Szczęśliwy traf</button>
         </div>
+            <div id="country"><span >Polska</span><br></div> 
+            <div class="left_footer">
+                <a href="https://www.google.pl/intl/pl_pl/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                Reklamuj się</a>
+                <a href="https://www.google.pl/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
+                    Dla firm</a>
+                <a href="https://www.google.pl/intl/pl_pl/about/?utm_source=google-PL&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                    O nas</a>
+            </div>
+            <div class="right_footer">
+                <a href="https://www.google.pl/intl/pl_pl/policies/privacy/?fg=1">Prywatność</a>
+                <a href="https://www.google.pl/intl/pl_pl/policies/terms/?fg=1">Warunki</a>
+                <a href="https://www.google.pl/preferences?hl=pl">Ustawienia</a>
+            </div>
 
     </div>
     
