@@ -16,11 +16,11 @@ Etapy prac:
 
 ### Imitacja
 
-![Imitacja](copy.png)
+![Imitacja](https://github.com/agachocz/google_page/blob/master/copy.PNG)
 
 
 ### Oryginał
-![Oryginał](original.png)
+![Oryginał](https://github.com/agachocz/google_page/blob/master/original.PNG)
 
 
 *Testowane w przeglądarce Chrome*
