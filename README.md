@@ -14,3 +14,13 @@ Etapy prac:
 3. Elementy HTML i stylizacja CSS.
 4. Rozmieszczenie elementów na stronie z wykorzystaniem CSS Flexbox oraz CSS Grid.
 
+### Imitacja
+
+![Imitacja](copy.png)
+
+
+### Oryginał
+![Oryginał](original.png)
+
+
+*Testowane w przeglądarce Chrome*
