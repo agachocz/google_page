@@ -5,11 +5,13 @@
     <meta charset="utf-8" />
     <title>Google</title>
     <link rel="icon" href="page_icon.png">
-    <style>
+   
 
-        button {
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <style>
+      
+         button {
             color: #757575;
-            border-radius: 2px;
             border: 1px solid #f2f2f2;
             cursor: pointer;
             font: 400 13.3333px Arial;
@@ -28,7 +30,8 @@
             border: 1px solid #c6c6c6;
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
             color: #222;
-        }
+        } 
+
         input {
             background-color: transparent;
             border: none;
@@ -167,7 +170,6 @@
         }
 
     </style>
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="grid_container">
@@ -190,8 +192,8 @@
                 </span>
             </div>
             </br>
-            <button>Szukaj w Google</button>
-            <button>Szczęśliwy traf</button>
+            <button class="mdc-button mdc-button--raised">Szukaj w Google</button>
+            <button class="mdc-button mdc-button--raised">Szczęśliwy traf</button>
         </div>
             <div id="country"><span >Polska</span><br></div> 
             <div class="left_footer">
@@ -210,6 +212,10 @@
 
     </div>
     
-
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+        mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+    </script>
 </body>
 </html>
