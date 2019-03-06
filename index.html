@@ -47,7 +47,7 @@
         }
         .input_container {
             padding: 5px 8px 0 8px;
-            border-radius: 2px;
+            border-radius: 30px;
             border: none;
             box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
             z-index: 3;
@@ -55,7 +55,7 @@
             width: 484px;
             margin: 0 auto;
         }
-        .access_icon {
+        .access_icons {
             cursor: pointer;
             line-height: 44px;
             height: 24px;
@@ -85,14 +85,10 @@
             box-shadow: 0 1px 0 rgba(0,0,0,.15);
         }
         #apps_button {
-            background-image: url(icons.png);
-            background-size: 528px 68px;
-            background-position: -132px -38px;
+            font-size: 20px;
             opacity: .55;
             cursor: pointer;
             box-sizing: border-box;
-            height: 30px;
-            width: 30px;
             display: inline-block;
             outline: none;
         }
@@ -171,6 +167,7 @@
         }
 
     </style>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="grid_container">
@@ -178,16 +175,19 @@
             <div class="flex_container">
                 <a href="https://mail.google.com/mail/?tab=wm">Gmail</a>
                 <a href="https://www.google.pl/imghp?hl=pl&tab=wi">Grafika</a>
-                <a href="https://www.google.pl/intl/pl/about/products?tab=wh" id="apps_button" title="Aplikacje Google"> </a>
+                <a href="https://www.google.pl/intl/pl/about/products?tab=wh" id="apps_button" title="Aplikacje Google"><i class="fas fa-th"></i> </a>
                 <button id="login">Zaloguj się</button>
             </div>
         </div>
         <div class="main">
             <img src="googlelogo.png"/></br></br>
             <div class="input_container">
+                <i class="fas fa-search" style="color: blue; cursor: pointer"></i>
                 <input />
-                <img src="keyboard.png" class="access_icon"/>
-                <img src="mic.png" class="access_icon"/>
+                <span class="access_icons">
+                    <i class="fas fa-keyboard"></i>
+                    <i class="fas fa-microphone" style="color: blue"></i>
+                </span>
             </div>
             </br>
             <button>Szukaj w Google</button>
