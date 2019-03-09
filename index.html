@@ -9,28 +9,6 @@
 
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <style>
-      
-         button {
-            color: #757575;
-            border: 1px solid #f2f2f2;
-            cursor: pointer;
-            font: 400 13.3333px Arial;
-            font-size: 13px;
-            font-weight: bold;
-            margin: 11px 4px;
-            min-width: 54px;
-            height: 36px;
-            line-height: 27px;
-            padding: 0 16px;
-            text-align: center;
-            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-        }
-        button:hover {
-            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-            border: 1px solid #c6c6c6;
-            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-            color: #222;
-        } 
 
         input {
             background-color: transparent;
@@ -178,7 +156,7 @@
                 <a href="https://mail.google.com/mail/?tab=wm">Gmail</a>
                 <a href="https://www.google.pl/imghp?hl=pl&tab=wi">Grafika</a>
                 <a href="https://www.google.pl/intl/pl/about/products?tab=wh" id="apps_button" title="Aplikacje Google"><i class="fas fa-th"></i> </a>
-                <button id="login">Zaloguj się</button>
+                <button class="mdc-button mdc-button--rised" id="login">Zaloguj się</button>
             </div>
         </div>
         <div class="main">
@@ -192,8 +170,8 @@
                 </span>
             </div>
             </br>
-            <button class="mdc-button mdc-button--raised">Szukaj w Google</button>
-            <button class="mdc-button mdc-button--raised">Szczęśliwy traf</button>
+            <button class="mdc-button" style="color: black">Szukaj w Google</button>
+            <button class="mdc-button" style="color: black">Szczęśliwy traf</button>
         </div>
             <div id="country"><span >Polska</span><br></div> 
             <div class="left_footer">
