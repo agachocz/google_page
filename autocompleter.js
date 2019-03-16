@@ -1,23 +1,36 @@
+window.animals = [
+    "Aardvark",
+    "Albatross",
+    "Alligator",
+    "Alpaca",
+    "Ant",
+    "Anteater",
+    "Antelope",
+    "Ape",
+    "Armadillo",
+    "Donkey",
+    "Baboon",
+    "Badger",
+    "Barracuda"]
+
 Vue.component('v-autocompleter', {
     props: ["input"],
     computed : {
         results: function () {
-            let results = [];
-
-            for (let i = 0; i < this.input.length; i++) {
-                results.push(this.input);
-            }
+            let pattern = new RegExp(this.input.trim().toLowerCase());
+            let results = window.animals.filter( function (word) {
+                 return pattern.test(word.trim().toLowerCase());    
+            });
 
             return results;
         }
     },
     template:
         `<div class="autocompleter">
-          <p>Input: {{input}}</p>
-          <ul class ="autocomplete-results">
-             <li class="autocomplete-result"
-                   v-for="(result, i) in results" :key="i">{{ result }}</li>
-          </ul>
+          <table class ="autocomplete-results">
+             <tr class="autocomplete-result"
+                   v-for="(result, i) in results" :key="i">{{ result }}</tr>
+          </table>
         </div>`
 })
 
@@ -25,7 +38,7 @@ Vue.component('v-autocompleter', {
         el: "#input_container",
         data: function () {
             return {
-                inputContent: "test"
+                inputContent: ""
             }
         }
     })
