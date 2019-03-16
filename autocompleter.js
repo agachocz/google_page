@@ -1,28 +1,14 @@
-window.animals = [
-    "Aardvark",
-    "Albatross",
-    "Alligator",
-    "Alpaca",
-    "Ant",
-    "Anteater",
-    "Antelope",
-    "Ape",
-    "Armadillo",
-    "Donkey",
-    "Baboon",
-    "Badger",
-    "Barracuda"]
 
 Vue.component('v-autocompleter', {
     props: ["input"],
     computed : {
         results: function () {
-            let pattern = new RegExp(this.input.trim().toLowerCase());
+            let pattern = new RegExp('^'+this.input, 'i');
             let results = window.animals.filter( function (word) {
-                 return pattern.test(word.trim().toLowerCase());    
+                 return pattern.test(word);    
             });
 
-            return results;
+            return results.length > 9 ? results.slice(0, 10) : results;
         }
     },
     template:

@@ -1,4 +1,5 @@
-window.animals = [
+
+    window.animals = [
     "Aardvark",
     "Albatross",
     "Alligator",
