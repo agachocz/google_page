@@ -35,10 +35,11 @@ Vue.component('v-autocompleter', {
 })
 
     new Vue({
-        el: "#input_container",
+        el: ".main",
         data: function () {
             return {
-                inputContent: ""
+                inputContent: "",
+                showAutocompleter: this.inputContent ? true : false
             }
         }
     })
